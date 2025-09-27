@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hisham Al-Eesa - Software Engineer</title>
+  <meta name="description" content="Software Engineer specializing in modern web applications and interactive experiences">
+
+  <!-- Preload fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  </noscript>
+
+<!-- EmailJS SDK -->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-theme="minimal">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Theme Selector -->
+  <div class="theme-selector">
+    <button class="theme-button active" data-theme="minimal" title="Minimal Theme"></button>
+    <button class="theme-button" data-theme="netflix" title="Netflix Theme"></button>
+    <button class="theme-button" data-theme="ocean" title="Ocean Theme"></button>
+    <button class="theme-button" data-theme="forest" title="Forest Theme"></button>
+    <button class="theme-button" data-theme="sunset" title="Sunset Theme"></button>
+  </div>
+
+  <header class="header">
+    <a href="#" class="logo" aria-label="Hisham Al-Eesa - Home">HISHAM AL-EESA</a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="nav" role="navigation">
+      <a href="#about">About Me</a>
+      <a href="#contact">Send a Message</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-label="Hero section">
+      <div class="hero-left" role="img" aria-label="Background image of coding setup"></div>
+      <div class="hero-right" id="hero-text">
+        <h1 class="hero-title">HISHAM AL-EESA</h1>
+        <p class="hero-description">Hi there! I’m a Software Engineer who loves turning ideas into modern web applications and interactive experiences. When I’m not coding, you’ll find me exploring new tech, learning, or tinkering with side projects.</p>
+        <p class="hero-subtitle">Software Engineer | Web Developer | Tech Enthusiast</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-image-container">
+        <!--<img
+          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80"
+          alt="Professional headshot of Hisham Al-Eesa"
+          class="about-image"
+          loading="lazy" />-->
+<img
+          src="./images/personal-photo.png"
+          alt="Professional headshot of Hisham Al-Eesa"
+          class="about-image"
+          loading="lazy" />
+        <div class="about-image-overlay"></div>
+      </div>
+      <div class="about-text">
+        <p>Hello! I'm <strong>Hisham</strong>, Hi, I love building web apps that work smoothly behind the scenes—aka the backend is my playground. The frontend? Let’s just say it keeps me humble. I enjoy turning ideas into code, adding small design touches, and figuring out why that one button refuses to cooperate. When I’m not coding, I’m exploring new tech or convincing myself that debugging is an extreme sport.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="contact-title">Send a Message</h2>
+      <p class="contact-description">💌 Your voice matters!
+No matter how small or silly it seems, your message can make a difference. Say hi, share a thought, or just send a wink—I’d love to hear from you. You can even stay <b>anonymous</b> by leaving your name and email blank!</p>
+      <form class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name" class="form-label">Name (Optional)</label>
+          <input type="text" id="name" name="name" class="form-input" placeholder="Your name" />
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email (Optional)</label>
+          <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Message *</label>
+          <textarea id="message" name="message" class="form-textarea" placeholder="Write your message here..." required aria-required="true"></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Hisham. All rights reserved.</p>
+  </footer>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
